@@ -1,0 +1,75 @@
+name: mason_riverpod
+description: A new brick created with the Mason CLI.
+
+# The following defines the version and build number for your brick.
+# A version number is three numbers separated by dots, like 1.2.34
+# followed by an optional build number (separated by a +).
+version: 0.1.0+1
+
+# The following defines the environment for the current brick.
+# It includes the version of mason that the brick requires.
+environment:
+  mason: ">=0.1.0-dev.42 <0.1.0"
+
+# Variables specify dynamic values that your brick depends on.
+# Zero or more variables can be specified for a given brick.
+# Each variable has:
+#  * a type (string, number, boolean, enum, or array)
+#  * an optional short description
+#  * an optional default value
+#  * an optional list of default values (array only)
+#  * an optional prompt phrase used when asking for the variable
+#  * a list of values (enums only)
+vars:
+
+  org_name:
+    type: string
+    prompt: What is the organization name?
+  app_name:
+    type: string
+    prompt: What is the app name?
+  launcher:
+    type: string
+    prompt: What is the launcher_icon.png directory url? (optional)
+    # default: /Users/berkay/Desktop/launcher.png
+  splash:
+    type: string
+    prompt: What is the splash.png directory url? (optional)
+    # default: /Users/berkay/Desktop/splash.png
+  dependencies:
+    type: array
+    prompt: Choose the dependencies you need
+    defaults: 
+      - hooks_riverpod
+      - flutter_hooks
+      - go_router
+      - freezed_annotation
+      - loader_overlay
+    values:
+      - hooks_riverpod
+      - flutter_hooks
+      - flutter_riverpod
+      - freezed_annotation
+      - go_router
+      - bloc
+      - flutter_bloc
+      - firebase_core
+      - firebase_auth
+      - firebase_messaging
+      - firebase_storage
+      - firebase_analytics
+      - firebase_crashlytics
+      - firebase_dynamic_links
+      - firebase_remote_config
+      - firebase_app_check
+      - firebase_ui_auth
+      - appwrite
+      - dart_frog
+      - serverpod
+      - isar
+      - flutter_svg
+      - rive
+      - uuid
+      - easy_rich_text
+      - loader_overlay
+      
