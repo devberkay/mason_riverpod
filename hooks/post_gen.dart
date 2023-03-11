@@ -4,8 +4,7 @@ import 'package:mason/mason.dart';
 
 Future<void> run(HookContext context) async {
   await Process.run('flutter', ['packages', 'get']);
-  try {
-    final launcherIcon = context.vars["launcher"] as String? ?? "";
+  final launcherIcon = context.vars["launcher"] as String? ?? "";
   final splashScreen = context.vars["splash"] as String? ?? "";
   if (launcherIcon.isNotEmpty) {
     final result = await Process.run(
@@ -23,9 +22,5 @@ Future<void> run(HookContext context) async {
     );
     context.logger.info(result.stdout);
     context.logger.info(result.stderr);
-  }
-  }
-  catch (e) {
-
   }
 }

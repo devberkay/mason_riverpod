@@ -31,11 +31,11 @@ vars:
   launcher:
     type: string
     prompt: What is the launcher_icon.png directory url? (optional)
-    # default: /Users/berkay/Desktop/launcher.png
+    default: /Users/berkay/Desktop/launcher.png
   splash:
     type: string
     prompt: What is the splash.png directory url? (optional)
-    # default: /Users/berkay/Desktop/splash.png
+    default: /Users/berkay/Desktop/splash.png
   dependencies:
     type: array
     prompt: Choose the dependencies you need
