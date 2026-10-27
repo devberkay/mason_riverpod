@@ -28,14 +28,6 @@ vars:
   app_name:
     type: string
     prompt: What is the app name?
-  launcher:
-    type: string
-    prompt: What is the launcher_icon.png directory url? (optional)
-    default: /Users/berkay/Desktop/flutter_logo/launcher.png
-  splash:
-    type: string
-    prompt: What is the splash.png directory url? (optional)
-    default: /Users/berkay/Desktop/flutter_logo/splash.png
   dependencies:
     type: array
     prompt: Choose the dependencies you need

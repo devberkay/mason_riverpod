@@ -1,1 +1,0 @@
-This can only be created because launcher path is given as a non-null string.
